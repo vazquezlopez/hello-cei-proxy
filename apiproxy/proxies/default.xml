@@ -1,0 +1,20 @@
+<ProxyEndpoint name="default">
+  <HTTPProxyConnection>
+    <BasePath>/v1/hello-cei-proxy</BasePath>
+  </HTTPProxyConnection>
+  <PreFlow name="PreFlow">
+    <Request>
+      <Step>
+        <Name>VAP-VerifyAPIKey</Name>
+      </Step>
+    </Request>
+    <Response>
+      <Step>
+        <Name>J2XML-TransformResponse</Name>
+      </Step>
+    </Response>
+  </PreFlow>
+  <RouteRule name="backend">
+    <TargetEndpoint>backend</TargetEndpoint>
+  </RouteRule>
+</ProxyEndpoint>
