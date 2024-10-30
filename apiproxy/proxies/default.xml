@@ -3,11 +3,7 @@
     <BasePath>/v1/hello-cei-proxy</BasePath>
   </HTTPProxyConnection>
   <PreFlow name="PreFlow">
-    <Request>
-      <Step>
-        <Name>VAP-VerifyAPIKey</Name>
-      </Step>
-    </Request>
+
     <Response>
       <Step>
         <Name>J2XML-TransformResponse</Name>
