@@ -4,11 +4,6 @@
   </HTTPProxyConnection>
   <PreFlow name="PreFlow">
 
-    <Response>
-      <Step>
-        <Name>J2XML-TransformResponse</Name>
-      </Step>
-    </Response>
   </PreFlow>
   <RouteRule name="backend">
     <TargetEndpoint>backend</TargetEndpoint>
